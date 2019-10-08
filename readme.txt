@@ -1,3 +1,2 @@
-Ova aplikacija rağena je u C++ programskom jeziku u radnoj okolini Viusal Studio Enterprise 2017.
-Korišten je ugrağeni Microsoft C++ complier.
-Pritiskom tipke F5 pokreæe se aplikacija.
+Ova aplikacija raÄ‘ena je u C++ programskom jeziku u radnoj okolini Viusal Studio Enterprise 2017.
+KoriÅ¡ten je ugraÄ‘eni Microsoft C++ complier.
