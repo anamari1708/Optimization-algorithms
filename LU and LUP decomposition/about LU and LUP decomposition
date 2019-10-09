@@ -4,6 +4,7 @@ LU decomposition can be viewed as the matrix form of Gaussian elimination. Compu
 using LU decomposition, and it is also a key step when inverting a matrix or computing the determinant of a matrix.
 LU decomposition was introduced by mathematician Tadeusz Banachiewicz in 1938.
 
+Why LUP?
 The stability of LU decomposition is improved if pivoting is used to maximize the absolute values of the diagonal elements of the
 upper triangular matrix U. The function LUP_decomp(A) performs LU-decomposition with partial pivoting. It is the same as the function
 LU_matrix(A) except a pivoting section has been added. It returns an object consisting of the LU matrix, the permutation matrix,
