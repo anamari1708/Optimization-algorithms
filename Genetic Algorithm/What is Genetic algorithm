@@ -1,0 +1,24 @@
+In computer science and operations research, a genetic algorithm (GA) is a metaheuristic inspired by the process of natural selection
+that belongs to the larger class of evolutionary algorithms (EA). Genetic algorithms are commonly used to generate high-quality solutions
+to optimization and search problems by relying on bio-inspired operators such as mutation, crossover and selection.
+John Holland introduced genetic algorithms in 1960 based on the concept of Darwin’s theory of evolution;
+afterwards, his student David E. Goldberg extended GA in 1989.
+
+In a genetic algorithm, a population of candidate solutions (called individuals, creatures, or phenotypes) to an optimization problem
+is evolved toward better solutions. Each candidate solution has a set of properties (its chromosomes or genotype) which can be mutated
+and altered; traditionally, solutions are represented in binary as strings of 0s and 1s, but other encodings are also possible.
+
+The evolution usually starts from a population of randomly generated individuals, and is an iterative process, with the population in
+each iteration called a generation. In each generation, the fitness of every individual in the population is evaluated; the fitness is
+usually the value of the objective function in the optimization problem being solved. The more fit individuals are stochastically selected
+from the current population, and each individual's genome is modified (recombined and possibly randomly mutated) to form a new generation.
+The new generation of candidate solutions is then used in the next iteration of the algorithm. Commonly, the algorithm terminates when
+either a maximum number of generations has been produced, or a satisfactory fitness level has been reached for the population.
+
+A typical genetic algorithm requires:
+- genetic representation of the solution domain
+- fitness function to evaluate the solution domain.
+
+The population size depends on the nature of the problem, but typically contains several hundreds or thousands of possible solutions.
+Often, the initial population is generated randomly, allowing the entire range of possible solutions (the search space).
+Occasionally, the solutions may be "seeded" in areas where optimalsolutions are likely to be found.
