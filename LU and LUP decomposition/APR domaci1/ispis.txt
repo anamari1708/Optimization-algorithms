@@ -1,0 +1,481 @@
+** ZAD 1 ***
+Kakva treba biti usporedba double varijabli kako bi usporeðivanje dalo ocekivane rezultate?Isprobajte operator == s elementima matrice kao necijelim brojevima, pomnozite i podijelite sarealnim brojem i usporedite s originalom. 
+
+Rjesenje:
+Usporedba: ne mozemo gledati samo sa obicnim == vec moramo gledati da je razlika dva broja manja od epsilon
+
+prva matrica glasi:
+A1
+dim(3 x 4)
+____________________________________________________
+
+12.5		3		9		2.1		
+
+4		5		6		7		
+
+8.45		9		10.2		11		
+
+____________________________________________________
+
+
+druga matrica glasi:
+A2
+dim(3 x 4)
+____________________________________________________
+
+14		5		7.25		10		
+
+6.7		4		9.9		3		
+
+1		0		2		16.4		
+
+____________________________________________________
+
+Razlicite su
+Nakon mnozenja skalarom prve i dijeljenja skalarom druge:
+
+prva matrica glasi:
+A1
+dim(3 x 4)
+____________________________________________________
+
+25		6		18		4.2		
+
+8		10		12		14		
+
+16.9		18		20.4		22		
+
+____________________________________________________
+
+
+druga matrica glasi:
+A2
+dim(3 x 4)
+____________________________________________________
+
+7		2.5		3.625		5		
+
+3.35		2		4.95		1.5		
+
+0.5		0		1		8.2		
+
+____________________________________________________
+
+** ZAD 2 ***
+Odredite može li se  sustav riješiti LU odnosno LUP
+
+ Pocetna matrica
+
+dim(3 x 3)
+_______________________________________
+
+3		9		6		
+
+4		12		12		
+
+1		-1		1		
+
+_______________________________________
+
+
+ *** L U *** : 
+
+Radio se LU ciji postupak mozete pronaci u datoteci 1.txt
+Dobivena je matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+3		9		6		
+
+1.33333		0		4		
+
+0.333333		-inf		inf		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 2.txt
+KONACNI Y GLASI:
+
+dim(3 x 1)
+_____________
+
+12		
+
+-4		
+
+-inf		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci error
+DOSLO JE DO POGRESKE!!
+
+ *** L U P ***: 
+Radio se LUP ciji postupak mozete pronaci u datoteci 4.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+4		12		12		
+
+0.25		-4		-2		
+
+0.75		-0		-3		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 5.txt
+KONACNI Y GLASI:
+
+dim(3 x 1)
+_____________
+
+12		
+
+-2		
+
+3		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci 6.txt
+KONACNI x glasi: 
+dim(3 x 1)
+_____________
+
+3		
+
+1		
+
+-1		
+
+_____________
+
+** ZAD 3 ***
+Odredite moze li se  sustav riješiti LU odnosno LUP
+
+Odabrani vektor b glasi:
+dim(3 x 1)
+_____________
+
+7		
+
+8		
+
+9		
+
+_____________
+
+
+ L U : 
+
+Radio se LU ciji postupak mozete pronaci u datoteci 10.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+1		2		3		
+
+4		-3		-6		
+
+7		2		0		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 11.txt
+KONACNI y GLASI : 
+dim(3 x 1)
+_____________
+
+7		
+
+-20		
+
+0		
+
+_____________
+
+DOSLO JE DO POGRESKE!!
+ L U P : 
+
+Radio se LUP ciji postupak mozete pronaci u datoteci error
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+4		12		12		
+
+0.25		-4		-2		
+
+0.75		-0		-3		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 14.txt
+KONACNI y glasi: 
+dim(3 x 1)
+_____________
+
+0		
+
+7		
+
+-23.5		
+
+_____________
+
+DOSLO JE DO POGRESKE!!
+** ZAD 4 ***
+Rijesiti pomocu LU odnosno LUP i obj razliku u rjesenju
+
+Pocetna matrica glasi:
+
+dim(3 x 3)
+_______________________________________
+
+1e-06		3e+06		3e+06		
+
+1e+06		2e+06		3e+06		
+
+2e+06		1e+06		2e+06		
+
+_______________________________________
+
+ L U : 
+
+Radilo se LU ciji postupak se moze pronaci u datoteci 16.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+1e-06		3e+06		3e+06		
+
+1e+12		-3e+18		-3e+18		
+
+2e+12		2		-1.00045e+06		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 17.txt
+KONACNI Y glasi: 
+dim(3 x 1)
+_____________
+
+1.2e+07		
+
+-1.2e+19		
+
+-6.00474e+06		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci 18.txt
+KONACNI x glasi: 
+dim(3 x 1)
+_____________
+
+0.00186265		
+
+-2.00205		
+
+6.00205		
+
+_____________
+
+ L U P : 
+
+Radio se LUP postupak se moze pronaci u datoteci 19.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+4		12		12		
+
+0.25		-4		-2		
+
+0.75		-0		-3		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 20.txt
+KONACNI Y glasi: 
+dim(3 x 1)
+_____________
+
+0.00186265		
+
+-2.00205		
+
+6.00205		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci 21.txt
+KONACNI x glasi: 
+dim(3 x 1)
+_____________
+
+3.33064e-13		
+
+-2		
+
+6		
+
+_____________
+
+** ZAD 5 ***
+Rijesiti pomocu LU odnosno LUP i obj razliku u rjesenju
+
+ L U : 
+
+Radio se LU ciji postupak se moze pronaci u datoteci 22.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+0		1		2		
+
+inf		-inf		-inf		
+
+inf		-nan(ind)		-nan(ind)		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 22.txt
+KONACNI Y glasi: 
+dim(3 x 1)
+_____________
+
+6		
+
+-inf		
+
+-nan(ind)		
+
+_____________
+
+DOSLO JE DO POGRESKE!!
+ L U P : 
+
+Radio se LUP ciji postupak se moze pronaci u datoteci 25.txt
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+3		5		1		
+
+0.666667		-3.33333		2.33333		
+
+0		-0.3		2.7		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 26.txt
+KONACNI y: 
+dim(3 x 1)
+_____________
+
+3		
+
+7		
+
+8.1		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci 27.txt
+KONACNI x glasi: 
+dim(3 x 1)
+_____________
+
+-1.03621e-15		
+
+5.32907e-16		
+
+3		
+
+_____________
+
+** ZAD 6 ***
+Rijesiti pomocu LU odnosno LUP i obj razliku u rjesenju
+
+ L U : 
+
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+4e+09		1e+09		3e+09		
+
+1e-09		1		4		
+
+7.5e-20		4.25e-10		-1.725e-09		
+
+_______________________________________
+
+
+Radio se LU ciji postupak se moze pronaci u datoteci 28.txt
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 29.txt
+KONACNI y: 
+dim(3 x 1)
+_____________
+
+9e+09		
+
+6		
+
+-1.725e-09		
+
+_____________
+
+DOSLO JE DO POGRESKE!
+ L U P : 
+
+Radio se LUP ciji postupak se moze pronaci u datoteci error
+Matrica L/U 
+dim(3 x 3)
+_______________________________________
+
+4e+09		1e+09		3e+09		
+
+1e-09		1		4		
+
+7.5e-20		4.25e-10		-1.725e-09		
+
+_______________________________________
+
+
+Radila se supstitucija unaprijed ciji postupak se moze pronaci u datoteci 32.txt
+KONACNI y: 
+dim(3 x 1)
+_____________
+
+9e+09		
+
+6		
+
+-1.725e-09		
+
+_____________
+
+Radila se supstitucija unatrag ciji postupak se moze pronaci u datoteci 33.txt
+KONACNI x glasi: 
+dim(3 x 1)
+_____________
+
+4500		
+
+2e-06		
+
+-3.45e-15		
+
+_____________
+

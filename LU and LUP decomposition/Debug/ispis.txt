@@ -1,0 +1,5 @@
+** ZAD 1 ***
+Kakva treba biti usporedba double varijabli kako bi usporeðivanje dalo ocekivane rezultate?Isprobajte operator == s elementima matrice kao necijelim brojevima, pomnozite i podijelite sarealnim brojem i usporedite s originalom. 
+
+Rjesenje:
+Usporedba: ne mozemo gledati samo sa obicnim == vec moramo gledati da je razlika dva broja manja od epsilon

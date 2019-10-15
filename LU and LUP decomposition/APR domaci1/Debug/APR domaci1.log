@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  APR domaci1.cpp
+c:\users\anamaria\source\repos\apr domaci1\apr domaci1\apr domaci1.cpp(226): warning C4101: 'pom': unreferenced local variable
+c:\users\anamaria\source\repos\apr domaci1\apr domaci1\apr domaci1.cpp(472): warning C4101: 'b': unreferenced local variable
+c:\users\anamaria\source\repos\apr domaci1\apr domaci1\apr domaci1.cpp(164): warning C4715: 'Matrica::Zbroji': not all control paths return a value
+c:\users\anamaria\source\repos\apr domaci1\apr domaci1\apr domaci1.cpp(186): warning C4715: 'Matrica::Oduzmi': not all control paths return a value
+c:\users\anamaria\source\repos\apr domaci1\apr domaci1\apr domaci1.cpp(221): warning C4715: 'Matrica::Mnozi': not all control paths return a value
+  APR domaci1.vcxproj -> C:\Users\Anamaria\source\repos\APR domaci1\Debug\APR domaci1.exe
