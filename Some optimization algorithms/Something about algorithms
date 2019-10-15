@@ -1,0 +1,40 @@
+-Golden-section search
+
+ The golden-section search is a technique for finding an extremum (minimum or maximum) of a function inside a specified
+ interval. For a strictly unimodal function with an extremum inside the interval, it will find that extremum,
+ while for an interval containing multiple extrema (possibly including the interval boundaries),
+ it will converge to one of them. If the only extremum inside the interval is on the boundary of the interval,
+ it will converge to that boundary point. The method operates by successively narrowing the range of values inside the
+ specified interval, which makes it relatively slow, but very robust. The technique derives its name from the fact that
+ the algorithm maintains the function values for triples of points whose distances form a golden ratio, 
+ which is maximally efficient. Excepting boundary points, when searching for a minimum, the central point is always less
+ than or equal to the outer points, assuring that a minimum is contained between the outer points. The converse is true
+ when searching for a maximum. The algorithm is the limit of Fibonacci search (also described below) for a large number
+ of function evaluations. Fibonacci search and golden-section search were discovered by Kiefer (1953).
+
+
+-Nelder–Mead method (simplex method)
+
+ The Nelder–Mead method (also downhill simplex method, amoeba method, or polytope method) is a commonly applied numerical
+ method used to find the minimum or maximum of an objective function in a multidimensional space. It is a direct search
+ method (based on function comparison) and is often applied to nonlinear optimization problems for which derivatives may
+ not be known. However, the Nelder–Mead technique is a heuristic search method that can converge to non-stationary points
+ on problems that can be solved by alternative methods.
+
+
+-Coordinate descent
+
+ Coordinate descent is an optimization algorithm that successively minimizes along coordinate directions to find the
+ minimum of a function. At each iteration, the algorithm determines a coordinate or coordinate block via a coordinate
+ selection rule, then exactly or inexactly minimizes over the corresponding coordinate hyperplane while fixing all other
+ coordinates or coordinate blocks. A line search along the coordinate direction can be performed at the current iterate
+ to determine the appropriate step size. Coordinate descent is applicable in both differentiable and derivative-free contexts.
+
+
+-The Hooke-Jeeves method (Pattern search)
+
+ Pattern search (also known as direct search, derivative-free search, or black-box search) is a family of numerical optimization
+ methods that does not require a gradient. As a result, it can be used on functions that are not continuous or differentiable.
+ One such pattern search method is "convergence", which is based on the theory of positive bases.
+ Optimization attempts to find the best match (the solution that has the lowest error value) in a multidimensional analysis
+ space of possibilities.
